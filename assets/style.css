@@ -1,0 +1,28 @@
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+img{
+    width: 500px;
+    height: 200px;
+}
+
+.carosello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item.active{
+    display: block;
+}
+
+.item{
+    display: none;
+}
+
+.next,.prev{
+    font-size: 25px;
+    cursor: pointer;
+} 
