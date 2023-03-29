@@ -3,9 +3,14 @@
     margin: 100px auto;
 }
 
-img{
+.item img{
     width: 500px;
     height: 250px;
+}
+
+.micro img{
+    width: 150px;
+    height: 50px;
 }
 
 .carosello{
@@ -42,4 +47,18 @@ img{
     z-index: 1;
     position: absolute;
     top: 10px;
+}
+
+.bloccoImg{
+    display: flex;
+    flex-direction: row;
+}
+
+.hover{
+    opacity: 0.5;
+    height: 50px;
+}
+
+.active{
+    opacity: 1;
 }

@@ -20,6 +20,23 @@ next.addEventListener ('click', function(){
 
 })
 
+next.addEventListener ('click', function(){
+
+    let activeHover = document.querySelector('.hover.active')
+
+    let hoverToActive = activeHover.nextElementSibling
+
+    if( activeHover.classList.contains('last')){
+        hoverToActive = document.querySelector('.hover.first')
+    }
+
+    activeHover.classList.remove('active')
+
+    hoverToActive.classList.add('active')
+
+
+})
+
 prev.addEventListener ('click', function(){
 
     let activeItem = document.querySelector('.item.active')
@@ -33,6 +50,23 @@ prev.addEventListener ('click', function(){
     activeItem.classList.remove('active')
 
     itemToActive.classList.add('active')
+
+
+})
+
+prev.addEventListener ('click', function(){
+
+    let activeHover = document.querySelector('.hover.active')
+
+    let hoverToActive = activeHover.previousElementSibling
+
+    if( activeHover.classList.contains('first')){
+        hoverToActive = document.querySelector('.hover.first')
+    }
+
+    activeHover.classList.remove('active')
+
+    hoverToActive.classList.add('active')
 
 
 })
